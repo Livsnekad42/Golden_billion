@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__body">
+                <div class="logo">
+                    <div class="logo__icon">
+                        <img src="./img/header/logo/logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="header__profile-info">
+                 <!--   <div class="info1">-->
+                        <div class="diamond-counter">
+                            <div class="diamond-counter__icon">
+                                <img src="./img/header/diamond.svg" alt="">
+                            </div>
+                            <div class="diamond-counter__counter">20</div>
+                            <div class="diamond-counter__submenu diamond-hover">
+                                <img src="img/header/diamond.svg" alt="" class="diamond-hover__icon">
+                                <div class="diamond__submenu_content">
+                                    <p class="diamond-hover__points">Криссталы</p>
+                                    <p class="diamond-hover__level">У вас 20 кристалов</p>
+                                    <p class="diamond-hover__tasks">Перейти к заданиям</p>
+                                    <p class="diamond-hover__purchases">Приобрести кристалы</p>
+                                    <div class="progress-hover__triangle diamond-hover__triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progressbar__icon">
+                                <img src="./img/header/progressbar/icon.png" alt="">
+                            </div>
+                            <div class="progressbar__title">
+                                <p>Обыватель</p>
+                            </div>
+                            <div class="progressbar__bar">360 из 720
+                            </div>
+                            <div class="progressbar__submenu progress-hover">
+                                <img src="img/brain.svg" alt="" class="progress-hover__icon">
+                                <div class="progressbar__submenu_content">
+                                    <p class="progress-hover__points">Балы знаний</p>
+                                    <p class="progress-hover__level">Ваш уровнь знаний &#8212; 10</p>
+                                    <p class="progress-hover__tasks">Перейти к заданиям</p>
+                                    <div class="progress-hover__triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                   <!-- </div>-->
+                   <!-- <div class="info2">-->
+                            <div class="header__shopping-cart">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM0 0V2H2L5.6 9.59L4.25 12.04C4.09 12.32 4 12.65 4 13C4 14.1 4.9 15 6 15H18V13H6.42C6.28 13 6.17 12.89 6.17 12.75L6.2 12.63L7.1 11H14.55C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C19.96 3.34 20 3.17 20 3C20 2.45 19.55 2 19 2H4.21L3.27 0H0ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z" fill="#C3CFD9"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="header__notifications">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21C13.1 21 14 20.1 14 19H10C10 20.1 10.89 21 12 21ZM18 15V10C18 6.93 16.36 4.36 13.5 3.68V3C13.5 2.17 12.83 1.5 12 1.5C11.17 1.5 10.5 2.17 10.5 3V3.68C7.63 4.36 6 6.92 6 10V15L4 17V18H20V17L18 15Z" fill="#C3CFD9"/>
+                                </svg>
+                                    <div class="notifications-hover">
+                                        <div class="notifications-hover__header">
+                                            <p class="notifications-hover__header_title">Уведомления</p>
+                                            <p class="notifications-hover__header_settings">Настойки</p>
+                                    </div>
+                                    <div class="notifications-hover__notifications">
+                                        <ul class="notifications-hover__header_list notifications-list">
+                                            <li class="notifications-list__item">
+                                                <p class="notifications-list__item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit.</p>
+                                                <p class="notifications-list__item_date">14 января 2020</p>
+                                            </li>
+                                            <li class="notifications-list__item"><p class="notifications-list__item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit.</p>
+                                                <p class="notifications-list__item_date">14 января 2020</p></li>
+                                            <li class="notifications-list__item"><p class="notifications-list__item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit.</p>
+                                                <p class="notifications-list__item_date">14 января 2020</p></li>
+                                            <li class="notifications-list__item"><p class="notifications-list__item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit.</p>
+                                                <p class="notifications-list__item_date">14 января 2020</p></li>
+                                            </ul>
+                                    </div>
+                                        <p class="notifications-hover__show-all">Показать всё</p>
+                                    </div>
+                            </div>
+                            <div class="header__avatar">
+                                <img src="./img/header/avatar.png" alt="">
+                                <div class="avatar-submenu">
+                                    <div class="avatar-submenu__header avatar-submenu-header">
+                                        <p class="avatar-submenu-header__status">Не вступил(-а) в ЗМ</p>
+                                        <p class="avatar-submenu-header__title">Витория Иванова</p>
+                                        <div class="avatar-submenu-header__triangle progress-hover__triangle"></div>
+                                    </div>
+                                    <ul class="avatar-submenu__list avatar-list">
+                                        <li class="avatar-list__item">
+                                            <img src="/img/header/profile.svg" alt="">
+                                            <p>Профиль</p>
+                                        </li>
+                                        <li class="avatar-list__item">
+                                            <img src="/img/header/my-purchases.svg" alt="">
+                                            <p>Мои покупки</p>
+                                        </li>
+                                        <li class="avatar-list__item">
+                                            <img src="/img/footer/question.svg" alt="">
+                                            <p>Задать вопрос</p>
+                                        </li>
+                                        <li class="avatar-list__item">
+                                            <img src="/img/header/settings.svg" alt="">
+                                            <p>Настройки</p>
+                                        </li>
+                                        <li class="avatar-list__item">
+                                            <img src="/img/header/logout.svg" alt="">
+                                            <p>Выйти</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                           
+                    <!--</div>-->
+                </div>
+            </div>
+        </header>
+        <div class="main-page">
+            <aside class="sidebar">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu__item sidebar-menu__item_active"><a href="#">Главная</a></li>
+                    <li class="sidebar-menu__item"><a href="#">Золотой миллиард</a></li>
+                    <li class="sidebar-menu__item sidebar-menu__item_collapse sidebar-menu__item_collapse_active"><a href="#">Клубы</a>
+                        <ul class="collapsed-menu collapsed-menu_active">
+                            <li class="collapsed-menu__item"><a href="#">Оздоровление</a></li>
+                            <li class="collapsed-menu__item"><a href="#">Сознательные люди</a></li>
+                            <li class="collapsed-menu__item"><a href="#">Знакомства</a></li>
+                            <li class="collapsed-menu__item"><a href="#">СКК</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-menu__item"><a href="#">Задания</a></li>
+                    <li class="sidebar-menu__item"><a href="#">Рейтинги</a></li>
+                    <li class="sidebar-menu__item"><a href="#">Магазин</a></li>
+                    <li class="sidebar-menu__item"><a href="#">Благотворительность</a></li>
+                    <li class="sidebar-menu__item"><a href="#">Часто задаваемые вопросы</a></li>
+                    <li class="sidebar-menu__item"><a href="#">Документация</a></li>
+                </ul>
+                <div class="sidebar__social-icons social-icons">
+                    <div class="social-icons__icon1">
+                        <img src="./img/aside/facebook.svg" alt="">
+                    </div>
+                    <div class="social-icons__icon2">
+                        <img src="./img/aside/vk.svg" alt="">
+                    </div>
+                </div>
+            </aside>
+            <section class="main-content">
+                <div class="main-content__hamburger">&#9776;</div>
+                <div class="levels">
+                        <div class="levels__about-title">Шкала уровней</div>
+                        <div class="levels__about-subtitle"><p>Разивайся и стань лучшим</p></div>
+                        <div class="level-list">
+                            <ul class="level__list list">
+                                <li class="list__item">1)&nbsp;Обыватель &#8212;</li>
+                                <li class="list__item">2)&nbsp;Ищущий &#8212;</li>
+                                <li class="list__item">3)&nbsp;Стремящийся</li>
+                                <li class="list__item">4)&nbsp;Знающий</li>
+                                <li class="list__item">5)&nbsp;Осознанный</li>
+                            </ul>
+                        </div>
+                        <div class="levels__pics pics">
+                            <div class="pics__level level">
+                                <div class="level__icon"></div>
+                                <div class="level__title">Обыватель</div>
+                            </div>
+                            <div class="pics__level level">
+                                <div class="level__icon"></div>
+                                <div class="level__title">Ищущий</div>
+                            </div>
+                            <div class="pics__level level">
+                                <div class="level__icon"></div>
+                                <div class="level__title">Стремящийся</div>
+                            </div>
+                            <div class="pics__level level">
+                                <div class="level__icon"></div>
+                                <div class="level__title">Знающий</div>
+                            </div>
+                            <div class="pics__level level">
+                                <div class="level__icon"></div>
+                                <div class="level__title">Осознанный</div>
+                            </div>
+                        </div>
+                </div>
+                <div class="tasks">
+                    <div class="tasks__body">
+                        <div class="tasks-header">
+                            <h2 class="tasks-header__title">Задания</h2>
+                            <div class="tasks-header__switcher switcher">
+                                    <label for="available" class="switcher__checkbox switcher__checkbox_active">Доступные
+                                        <input type="checkbox" name="" id="available">
+                                    </label>
+                                    <label for="completed" class="switcher__checkbox">Выполненные
+                                        <input type="checkbox" name="" id="completed">
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="tasks-info">
+                                <div class="tasks-info__task task">
+                                    <div class="task__title">Регистрация в золотом миллиаре</div>
+                                    <div class="task-info__icons">
+                                        <div class="diamond-counter task__diamond-counter">
+                                            <div class="diamond-counter__icon">
+                                                <img src="./img/header/diamond.svg" alt="">
+                                            </div>
+                                            <div class="diamond-counter__counter task__diamond-counter_counter">10</div>
+                                        </div>
+                                        <div class="diamond-counter task__diamond-counter">
+                                            <div class="diamond-counter__icon">
+                                                <img src="/img/brain.svg" alt="">
+                                            </div>
+                                            <div class="diamond-counter__counter brain-counter_counter">10</div>
+                                        </div>
+                                    </div>
+                                   <div class="task__claim-button">Забрать награду</div>
+                                </div>
+                                <div class="tasks-info__task task">
+                                    <div class="task__title">Регистрация в золотом миллиаре</div>
+                                    <div class="task-info__icons">
+                                        <div class="diamond-counter task__diamond-counter">
+                                            <div class="diamond-counter__icon">
+                                                <img src="./img/header/diamond.svg" alt="">
+                                            </div>
+                                            <div class="diamond-counter__counter task__diamond-counter_counter"">10</div>
+                                        </div>
+                                        <div class="diamond-counter task__diamond-counter">
+                                            <div class="diamond-counter__icon">
+                                                <img src="/img/brain.svg" alt="">
+                                            </div>
+                                            <div class="diamond-counter__counter brain-counter_counter">10</div>
+                                        </div>
+                                    </div>
+                                    <div class="task__claim-button">
+                                        Забрать награду
+                                    </div>
+                                </div>
+                                <div class="tasks-info__task task last-task">
+                                    <div class="task__title">Регистрация в золотом миллиаре</div>
+                                    <div class="task-info__icons">
+                                        <div class="diamond-counter task__diamond-counter">
+                                            <div class="diamond-counter__icon">
+                                                <img src="./img/header/diamond.svg" alt="">
+                                            </div>
+                                            <div class="diamond-counter__counter task__diamond-counter_counter"">10</div>
+                                        </div>
+                                        <div class="diamond-counter task__diamond-counter">
+                                            <div class="diamond-counter__icon">
+                                                <img src="/img/brain.svg" alt="">
+                                            </div>
+                                            <div class="diamond-counter__counter brain-counter_counter">10</div>
+                                        </div>
+                                    </div>
+                                    <div class="task__claim-button">
+                                        Забрать награду
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="terms">
+                <ul class="terms__list footer-list">
+                    <li class="footer-list__item last-item">Все права защищены, 2020</li>
+                    <li class="footer-list__item">Политика конфедициальности</li>
+                    <li class="footer-list__item">Правила и условия</li>
+                    <li class="footer-list__item">Пригласить пайщика</li>
+                </ul>
+            </div>
+            <p class="footer__ask-question">Задать вопрос</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+
+  $(document).ready(function() {
+      const switcher_aval = $('input[id="available"]');
+      const switcher_compl = $('input[id="completed"]');
+      const active = 'switcher__checkbox_active';
+      const label_aval = $('label[for="available"]');
+      const label_compl = $('label[for="completed"]');
+
+        switcher_aval.click(function(){
+        label_aval.addClass(active);
+        label_compl.removeClass(active);
+        });
+        switcher_compl.click(function(){
+        label_compl.addClass(active);
+        label_aval.removeClass(active);
+        });
+
+        const menuItem = $('.sidebar-menu__item_collapse');
+        const menuItemActive = 'sidebar-menu__item_collapse_active';
+        const collapsedMenu = $('.collapsed-menu');
+        const collapsedMenuActive = 'collapsed-menu_active';
+        menuItem.click(function() {
+            menuItem.toggleClass(menuItemActive);
+            collapsedMenu.toggleClass(collapsedMenuActive);
+        });
+
+        const hamburgerMenu = $('.main-content__hamburger');
+        const sidebar = $('.sidebar');
+        const sidebarActive = 'sidebar_visible';
+        const mainPage = $('.main-page');
+        const mainPageWithSidebar = 'main-page__active-sidebar';
+        const marginClass = 'ml-10';
+        hamburgerMenu.click(function() {
+            sidebar.toggleClass(sidebarActive);
+            $('.levels__about-title').toggleClass(marginClass);
+            $('.levels__about-subtitle').toggleClass(marginClass);
+            if (sidebar.hasClass(sidebarActive)) {
+                hamburgerMenu.html('&#215;').css('font-size', 50);
+                mainPage.addClass(mainPageWithSidebar);
+            } else {
+                hamburgerMenu.html('&#9776').css('font-size', 18);
+                mainPage.removeClass(mainPageWithSidebar);
+            }
+        })
+        $(window).resize(function() {
+            if ($(window).width() > 792 && sidebar.hasClass(sidebarActive)) {
+                sidebar.removeClass(sidebarActive);
+                hamburgerMenu.html('&#9776').css('font-size', 18);
+            }
+        });
+  });
+    
+        
+    
+    
+    </script>
+</body>
+</html>
