@@ -167,6 +167,12 @@ table {
   right: 10px !important;
 }
 
+.header {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
 .header__avatar {
   margin-left: 32px;
   margin-right: 4px;
@@ -189,6 +195,7 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .header__notifications {
@@ -284,6 +291,10 @@ table {
 
 .avatar-list__item:nth-child(2) {
   margin-bottom: -3px;
+}
+
+.logo {
+  float: left;
 }
 
 .logo__icon img {
@@ -497,6 +508,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  float: left;
 }
 
 .sidebar {
@@ -888,6 +900,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  float: left;
+  clear: both;
 }
 
 .footer__ask-question {
@@ -1202,10 +1216,6 @@ a {
   .main-page {
     width: calc(100% + 102px);
   }
-  .header {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .logo__icon {
     margin-right: 78px;
   }
@@ -1215,14 +1225,6 @@ a {
   .tasks-header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1238,6 +1240,8 @@ a {
   }
   .header__profile-info {
     margin-top: 20px;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
   }
   .progressbar__bar {
     width: 210px;
