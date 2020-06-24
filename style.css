@@ -331,16 +331,30 @@ table {
 .progressbar__bar {
   width: 288px;
   height: 24px;
-  background: -webkit-gradient(linear, left top, right top, from(#99F0BC), color-stop(50%, #99F0BC), color-stop(50%, #e9eee2), to(#e9eee2));
-  background: linear-gradient(to right, #99F0BC, #99F0BC 50%, #e9eee2 50%, #e9eee2 100%);
-  border-radius: 48px;
-  text-align: center;
   z-index: 3;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  color: rgba(0, 0, 0, 0.6);
   margin-top: 4px;
+  background: #e2eef2;
+  border-radius: 48px;
+  z-index: 1;
+}
+
+.progressbar__bar_green {
+  position: absolute;
+  background: #99F0BC;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 48px;
+  width: 132px;
+  height: 16px;
+  text-align: center;
+  z-index: 2;
+}
+
+.progressbar__bar_green p {
+  margin-left: 27px;
+  margin-top: -3px;
 }
 
 .progressbar__icon {
@@ -910,7 +924,7 @@ a {
   line-height: 16px;
   color: #555555;
   position: relative;
-  margin-right: 49px;
+  margin-left: 266px;
   margin-top: 14px;
 }
 
@@ -1094,7 +1108,7 @@ a {
   }
   .header__avatar {
     margin-left: 24px;
-    margin-right: 4px;
+    margin-right: 19px;
     margin-top: -10px;
   }
   .header__avatar img {
@@ -1280,6 +1294,25 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .header__shopping-cart {
+    margin-left: 115px;
+    margin-top: -34px;
+  }
+  .header__notifications {
+    margin-top: -32px;
+  }
+  .header__avatar {
+    margin-top: -19px;
+    margin-bottom: 14px;
+  }
+  .header__avatar img {
+    width: 36px;
+    height: 36px;
+  }
+  .header__diamond-counter {
+    margin-left: -63px;
+    margin-top: 2px;
+  }
   .info1 {
     margin-left: 20px;
     -webkit-box-orient: vertical;
@@ -1290,12 +1323,6 @@ a {
   .info2 {
     margin-right: 20px;
     margin-bottom: 10px;
-  }
-  .progressbar__bar {
-    max-width: 200px;
-  }
-  .tasks__body {
-    margin: 0 auto;
   }
   .footer {
     -webkit-box-orient: vertical;
@@ -1333,15 +1360,133 @@ a {
     padding: 150px 20px;
   }
   .logo__icon {
-    margin-bottom: 50px;
+    margin-bottom: -37px;
+    margin-left: -23px;
+    margin-top: 2px;
   }
-}
-
-@media (max-width: 322px) {
+  .logo img {
+    max-width: 112px;
+    max-height: 32px;
+  }
+  .progressbar {
+    margin-top: -16px;
+    margin-left: 2px;
+  }
+  .progressbar__icon {
+    top: -13px;
+  }
+  .progressbar__icon img {
+    width: 42px;
+    height: 42px;
+  }
+  .progressbar__bar {
+    max-width: 210px;
+    margin-bottom: 5px;
+  }
+  .progressbar__bar_green {
+    position: absolute;
+    background: #99F0BC;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 48px;
+    width: 132px;
+    height: 16px;
+    text-align: center;
+    z-index: 2;
+    top: 4px;
+  }
+  .progressbar__bar_green p {
+    margin-left: 27px;
+    margin-top: -3px;
+  }
+  .levels__about-title {
+    font-size: 28px;
+    line-height: 34px;
+    margin-left: -1px;
+    margin-top: 64px;
+    margin-bottom: 15px;
+  }
+  .levels__about-subtitle {
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .levels__pics {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 41px;
+  }
+  .main-content {
+    max-width: 67%;
+    margin-left: 18px;
+    margin-top: -9px;
+  }
+  .main-content__hamburger {
+    font-size: 19px;
+    top: 17px;
+    left: 18px;
+  }
   .pics__level {
-    margin-right: 5px;
+    margin-left: -8px;
   }
-  .pics__level:nth-child(even) {
-    margin-right: 0;
+  .pics__level:nth-child(odd) {
+    margin-right: 44px;
+  }
+  .level__title {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 53px;
+  }
+  .tasks__body {
+    padding-top: 24px;
+    margin-left: 14px;
+    margin-right: 10px;
+    border-radius: 8px;
+    margin-top: -22px;
+  }
+  .tasks-header {
+    margin-bottom: 28px;
+  }
+  .tasks-header__title {
+    margin-bottom: 22px;
+    margin-right: 120px;
+  }
+  .tasks-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .task {
+    padding-left: 16px;
+    padding-bottom: 33px;
+    padding-right: 0;
+  }
+  .task__title {
+    margin-top: 0;
+    margin-left: -3px;
+  }
+  .task__claim-button {
+    width: 191px;
+  }
+  .switcher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+  }
+  .terms {
+    margin-left: 63px;
+    margin-top: 1px;
+  }
+  .footer-list__item:last-child {
+    margin-bottom: 17px;
+  }
+  .footer__ask-question {
+    margin-left: 61px;
+    margin-top: 0;
   }
 }
+/*# sourceMappingURL=style.css.map */
