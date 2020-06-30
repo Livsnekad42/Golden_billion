@@ -333,7 +333,18 @@
         $(window).resize(function() {
             if ($(window).width() > 792 && sidebar.hasClass(sidebarActive)) {
                 sidebar.removeClass(sidebarActive);
+                mainPage.removeClass(mainPageWithSidebar);
                 hamburgerMenu.html('&#9776').css('font-size', 18);
+            };
+
+            if ($(window).width() < 430 && sidebar.hasClass(sidebarActive)) {
+                $('.level:nth-child(3)').css('margin-top', -19);
+                $('.level:nth-child(5)').css('margin-top', -38);
+                $('.tasks__body').css('padding-top', 58);
+            } else {
+                $('.level:nth-child(3)').css('margin-top', 0);
+                $('.level:nth-child(5)').css('margin-top', 0);
+                $('.tasks__body').css('padding-top', 31);
             }
         });
   });
